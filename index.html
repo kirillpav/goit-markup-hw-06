@@ -264,6 +264,8 @@
             </ul>
         </section>
 
+
+        <!-- backdrop+modal -->
         <div class="backdrop is-hidden" data-backdrop>
             <div class="modal">
                 <button type="button" class="close-button" data-close-modal>
@@ -271,6 +273,47 @@
                         <use href="./imgs/sprite.svg#vector"></use>
                     </svg>
                 </button>
+
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                <form class="callback-form">
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input class="form-input" type="text" name="name" id="name">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./imgs/sprite.svg#icon-user"></use>
+                        </svg>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="name">Телефон</label>
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./imgs/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="name">Почта</label>
+                        <input class="form-input" type="email" name="mail" id="mail">
+                        <svg class="form-icon" width="18px" height="18px">
+                            <use href="./imgs/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="comment">Комментарий</label>
+                        <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                        
+                    <div class="policy-form">
+                        <input class="checkbox" type="checkbox" name="policy" id="policy">
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+                    </div>
+
+                    <button type="submit" class="submit-button button">Отправить</button>
+                </form>
+                
             </div>
 
         </div>
@@ -283,6 +326,7 @@
             <div class="footer">
                 <a href="./index.html" class="foot-logo"><span class="title">Web</span>Studio</a>
                 <h2 class="join-title">присоединяйтесь</h2>
+                <h2 class="join-title">Подпишитесь на рассылку</h2>
             </div>
             <div class="footer">
                 <ul class="foot-list list">
@@ -322,6 +366,17 @@
                         </a>
                     </li>
                 </ul>
+
+                <form class="join-today">
+                    <div class="join-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="mail" id="mail" autocomplete="email" placeholder="E-mail">
+                    </div>
+                </form>
+
+                <button type="button" class="join-button button">
+                    <p class="join-text">Подписаться</p>
+                </button>
             </div>
         </div>
     </footer>
