@@ -918,6 +918,18 @@ body {
   line-height: 1.16;
 }
 
+.form-icon{
+  position: absolute;
+  top: 75%;
+  left: 12px;
+
+  transform: translateY(-75%);
+
+  fill: var(--title-text-color);  
+}
+
+
+/* Policy form */
 
 .policy-form{
   text-align: center;
@@ -929,15 +941,45 @@ body {
   margin-bottom: 30px;
 }
 
-.form-icon{
+.checkbox{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   position: absolute;
-  top: 75%;
-  left: 12px;
-
-  transform: translateY(-75%);
-
-  fill: var(--title-text-color);  
 }
+
+.policy-form label{
+  display: inline-flex;
+  align-items: center;
+}
+
+.policy-icon{
+  display: inline-block;
+
+  align-items: center;
+
+  margin-right: 8.38px;
+
+  border: 2px solid black;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .policy-icon{
+  border-color: transparent;
+  background-color: var(--accent-color);
+
+  background-image: url(../imgs/check.svg);
+  background-size: contain;
+  /* background-origin: border-box; */
+
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+
+
 
 .agreement-link{
   color: var(--accent-color);
