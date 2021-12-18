@@ -851,6 +851,7 @@ p {
 
 .form-input {
   width: 448px;
+  height: 40px;
 
   padding: 12px;
 
@@ -919,6 +920,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 
   margin-top: 20px;
   margin-bottom: 30px;
@@ -964,9 +966,11 @@ p {
 }
 
 .agreement-link {
-  display: inline-block;
+  display: inline;
 
   color: var(--accent-color);
+
+  margin-left: 5px;
 }
 
 .submit-button {
