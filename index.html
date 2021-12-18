@@ -287,26 +287,32 @@
                 <form class="callback-form">
                     <div class="form-field">
                         <label for="name">Имя</label>
-                        <input class="form-input" type="text" name="name" id="name">
-                        <svg class="form-icon" width="18px" height="18px">
-                            <use href="./imgs/sprite.svg#icon-user"></use>
-                        </svg>
+                        <div class="input-wrap">
+                            <input class="form-input" type="text" name="name" id="name">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./imgs/sprite.svg#icon-user"></use>
+                            </svg>
+                        </div>
                     </div>
                     
                     <div class="form-field">
                         <label for="tel">Телефон</label>
-                        <input class="form-input" type="tel" name="tel" id="tel">
-                        <svg class="form-icon" width="18px" height="18px">
-                            <use href="./imgs/sprite.svg#icon-phone"></use>
-                        </svg>
+                        <div class="input-wrap">
+                            <input class="form-input" type="tel" name="tel" id="tel">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./imgs/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </div>
                     
                     <div class="form-field">
                         <label for="mail">Почта</label>
-                        <input class="form-input" type="email" name="mail" id="mail">
-                        <svg class="form-icon" width="18px" height="18px">
-                            <use href="./imgs/sprite.svg#icon-mail"></use>
-                        </svg>
+                        <div class="input-wrap">
+                            <input class="form-input" type="email" name="mail" id="mail">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./imgs/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
                     </div>
                     
                     <div class="form-field">
@@ -372,6 +378,19 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer footer-singup">
+                <h2 class="signup-title">
+                    Подпишитесь на рассылку</h2>
+                <form class="signup-form">
+                    <label for="signup-label"></label>
+                    <input type="mail" class="signup-input" name="mail" id="mail" placeholder="E-mail">
+                    <button type="submit" class="signup-button">Подписаться
+                        <svg class="signup-icon" width="24" height="24">
+                            <use href="./imgs/sprite.svg#send-icon"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
